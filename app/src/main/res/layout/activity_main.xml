@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:theme="@style/SplashScreen" >
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="222dp"
-        android:layout_height="206dp"
+        android:layout_width="320dp"
+        android:layout_height="273dp"
         android:layout_marginBottom="325dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,6 +38,7 @@
 
     <TextView
         android:id="@+id/textView2"
+        style="@style/TCs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -44,4 +46,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

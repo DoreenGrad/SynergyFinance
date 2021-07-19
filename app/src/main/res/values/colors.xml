@@ -7,6 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
 
+    <color name="backgroundDarkGray100">#FF262626</color>
     <color name="backgroundGray100">#FF454545</color>
     <color name="backgroundLightGray100">#FF525252</color>
     <color name="lineGray100">#FF545454</color>
@@ -18,6 +19,7 @@
     <color name="backgroundWhite50">#80FFFFFF</color>
     <color name="backgroundWhite60">#99FFFFFF</color>
     <color name="backgroundWhite70">#B3FFFFFF</color>
+    <color name="backgroundWhite80">#CCFFFFFF</color>
     <color name="backgroundWhite90">#E6FFFFFF</color>
     <color name="backgroundWhite100">#FFFFFFFF</color>
 </resources>

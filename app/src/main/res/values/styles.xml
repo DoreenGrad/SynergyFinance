@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="SplashScreen">
+        <item name="android:background">@color/backgroundDarkGray100</item>
+        <item name="android:textColor">@color/backgroundWhite100</item>
+    </style>
+
+    <style name="TCs">
+        <item name="android:textColor">@color/backgroundWhite80</item>
+    </style>
+
+    <style name="SynergyFinance.NoTitleBar" parent="Theme.SynergyFinance">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>
