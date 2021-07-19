@@ -10,8 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SynergyFinance">
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/SynergyFinance.NoTitleBar" >
+            android:name=".RegisterActivity"
+            android:theme="@style/SynergyFinance.NoTitleBar" ></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/SynergyFinance.NoTitleBar" />
+        <activity
+            android:name=".SpashScreenActivity"
+            android:theme="@style/SynergyFinance.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
     <style name="SplashScreen">
         <item name="android:background">@color/backgroundDarkGray100</item>
         <item name="android:textColor">@color/backgroundWhite100</item>
@@ -14,6 +13,37 @@
     <style name="SynergyFinance.NoTitleBar" parent="Theme.SynergyFinance">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ButtonLoginRegister">
+        <item name="background">@drawable/roundstyle26</item>
+        <item name="backgroundColor">@color/backgroundBlue30</item>
+        <item name="android:textColor">@color/backgroundWhite100</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="HeadingLoginRegister">
+        <item name="layout_goneMarginStart">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:textColor">@color/backgroundWhite100</item>
+        <item name="android:textSize">34dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewInput">
+
+    </style>
+
+    <style name="NoTitleBar">
+
     </style>
 
 </resources>
