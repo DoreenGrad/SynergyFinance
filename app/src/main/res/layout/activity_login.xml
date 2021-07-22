@@ -52,7 +52,7 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/backgroundWhite00"
-        android:background="@drawable/roundstyle_googletextview"
+        android:background="@drawable/roundstyle_passwordboxes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,6 +63,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:backgroundTint="@color/backgroundWhite00"
+            android:background="@drawable/roundstyle_passwordboxes"
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
@@ -72,13 +73,11 @@
                 android:backgroundTint="@color/backgroundWhite00"
                 android:hint=""
                 android:paddingStart="6dp"
-                android:paddingEnd="6dp"
-                app:hintTextColor="@color/backgroundWhite100">
+                android:paddingEnd="6dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/roundstyle_googletextview02"
                     android:backgroundTint="@color/backgroundWhite90"
                     android:drawableStart="@drawable/ic_person"
                     android:drawablePadding="10dp"
@@ -101,7 +100,6 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/roundstyle_googletextview"
                     android:backgroundTint="@color/backgroundWhite90"
                     android:drawableStart="@drawable/ic_lock"
                     android:drawablePadding="10dp"
