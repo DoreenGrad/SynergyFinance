@@ -16,7 +16,7 @@
     </style>
 
     <style name="ButtonLoginRegister">
-        <item name="background">@drawable/roundstyle26</item>
+        <item name="background">@drawable/roundstyle_all_08</item>
         <item name="backgroundColor">@color/backgroundBlue30</item>
         <item name="android:textColor">@color/backgroundWhite100</item>
         <item name="android:textSize">20dp</item>
@@ -36,14 +36,6 @@
         <item name="android:textColor">@color/backgroundWhite100</item>
         <item name="android:textSize">34dp</item>
         <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="TextViewInput">
-
-    </style>
-
-    <style name="NoTitleBar">
-
     </style>
 
 </resources>

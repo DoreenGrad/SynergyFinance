@@ -16,6 +16,7 @@
     <color name="backgroundBlue90">#E60000FF</color>
     <color name="backgroundBlue100">#FF0000FF</color>
     <color name="lineBlue100">#FF008CFF</color>
+    <color name="backgroundWhite00">#00FFFFFF</color>
     <color name="backgroundWhite50">#80FFFFFF</color>
     <color name="backgroundWhite60">#99FFFFFF</color>
     <color name="backgroundWhite70">#B3FFFFFF</color>

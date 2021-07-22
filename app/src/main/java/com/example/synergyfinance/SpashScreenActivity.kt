@@ -19,6 +19,6 @@ class SpashScreenActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
-        }, 20)
+        }, 2000)
     }
 }
