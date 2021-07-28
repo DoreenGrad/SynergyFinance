@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Synergy Finance</string>
+    <string name="TCs">An App by Synergy Code</string>
+    <string name="BudgetText">Budget Calculator</string>
+    <string name="LoanText">Loan Calculator</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
 </resources>

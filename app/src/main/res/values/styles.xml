@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="SynergyFinance.NoTitleBar" parent="Theme.SynergyFinance">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
     <style name="SplashScreen">
         <item name="android:background">@color/backgroundDarkGray100</item>
         <item name="android:textColor">@color/backgroundWhite100</item>
@@ -8,11 +18,23 @@
 
     <style name="TCs">
         <item name="android:textColor">@color/backgroundWhite80</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:text">@string/TCs</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
     </style>
 
-    <style name="SynergyFinance.NoTitleBar" parent="Theme.SynergyFinance">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="ProgressBarSplashScreen">
+        <item name="android:layout_width">168dp</item>
+        <item name="android:layout_height">128dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_bar_round_white</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintHorizontal_bias">0.5</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
     </style>
 
     <style name="ButtonLoginRegister">
@@ -23,8 +45,9 @@
         <item name="android:textStyle">bold</item>
         <item name="android:paddingStart">20dp</item>
         <item name="android:paddingEnd">20dp</item>
-        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">50dp</item>
+        <item name="fontFamily">@font/merriweather</item>
     </style>
 
     <style name="HeadingLoginRegister">
@@ -36,6 +59,24 @@
         <item name="android:textColor">@color/backgroundWhite100</item>
         <item name="android:textSize">34dp</item>
         <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/merriweather</item>
+    </style>
+
+    <style name="HeadingLoginRegister.DrawerHeading" parent="HeadingLoginRegister">
+        <item name="android:textSize">21dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/backgroundLightGray100</item>
+        <item name="elevation">4dp</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
     </style>
 
 </resources>
