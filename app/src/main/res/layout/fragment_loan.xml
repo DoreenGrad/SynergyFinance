@@ -1,20 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:theme="@style/SplashScreen">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Loan Things"
-        android:textSize="30sp"
+
+    <EditText
+        android:id="@+id/editTextPrincipalAmount"
+        style="@style/EditTextNumber"
+        android:layout_marginTop="35dp"
+        android:hint="Principal Amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPrincipalAmount2"
+        style="@style/EditTextNumber"
+        android:backgroundTint="@color/textGray100"
+        android:background="@drawable/roundstyle_all_08"
+        android:textColor="@color/backgroundWhite100"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.23"
+        android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTotalRepay"
+        style="@style/EditTextNumber"
+        android:layout_marginTop="15dp"
+        android:hint="Total Repayment Amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrincipalAmount" />
+
+    <EditText
+        android:id="@+id/editTextInterestRate"
+        style="@style/EditTextNumber"
+        android:layout_marginTop="15dp"
+        android:hint="Interest Rate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTotalRepay" />
+
+    <EditText
+        android:id="@+id/editTextDurationYears"
+        style="@style/EditTextNumber"
+        android:layout_marginTop="15dp"
+        android:hint="Duration in Years"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <EditText
+        android:id="@+id/editTextRepay"
+        style="@style/EditTextNumber"
+        android:layout_marginTop="15dp"
+        android:hint="Repayment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDurationYears" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="25dp"
+        android:progressBackgroundTint="@color/backgroundWhite80"
+        android:progressTint="@color/backgroundWhite90"
+        android:thumbTint="@color/backgroundWhite100"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDurationYears"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInterestRate"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shadow_button"
+        android:fontFamily="@font/merriweather"
+        android:text="Calculate"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.085"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRepay"
+        app:layout_constraintWidth_percent="0.75" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

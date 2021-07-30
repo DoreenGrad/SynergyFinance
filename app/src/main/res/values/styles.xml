@@ -79,4 +79,34 @@
         <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
     </style>
 
+    <style name="EditTextNumber">
+        <item name="android:background">@drawable/roundstyle_all_20</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:fontFamily">@font/merriweather</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">120dp</item>
+        <item name="android:backgroundTint">@color/backgroundGray100</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColorHint">@color/backgroundWhite60</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textColor">@color/backgroundWhite100</item>
+        <item name="layout_constraintHeight_default">percent</item>
+        <item name="layout_constraintHeight_percent">0.085</item>
+        <item name="layout_constraintHorizontal_bias">0.497</item>
+        <item name="layout_constraintWidth_default">percent</item>
+        <item name="layout_constraintWidth_percent">0.85</item>
+    </style>
+
+    <style name="ButtonCalculate">
+        <item name="backgroundTint">@color/backgroundBlue30</item>
+        <item name="android:textColor">@color/backgroundWhite100</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="fontFamily">@font/merriweather</item>
+    </style>
 </resources>
