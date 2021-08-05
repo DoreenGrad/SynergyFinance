@@ -90,12 +90,25 @@
         <item name="android:ems">10</item>
         <item name="android:textColorHint">@color/backgroundWhite60</item>
         <item name="android:inputType">number</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">bottom|top</item>
         <item name="android:textColor">@color/backgroundWhite100</item>
         <item name="layout_constraintHeight_default">percent</item>
         <item name="layout_constraintHeight_percent">0.085</item>
         <item name="layout_constraintHorizontal_bias">0.497</item>
         <item name="layout_constraintWidth_default">percent</item>
         <item name="layout_constraintWidth_percent">0.85</item>
+    </style>
+
+    <style name="EditTextNumber.TextViewAnswer" parent="EditTextNumber">
+        <item name="backgroundTint">@color/textGray100</item>
+        <item name="android:background">@drawable/roundstyle_all_08</item>
+        <item name="android:textColor">@color/backgroundWhite100</item>
+        <item name="layout_constraintHeight_percent">0.18</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:lines">3</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:textSize">15sp</item>
     </style>
 
     <style name="ButtonCalculate">

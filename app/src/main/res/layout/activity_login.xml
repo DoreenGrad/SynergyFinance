@@ -81,9 +81,10 @@
                     android:backgroundTint="@color/backgroundWhite90"
                     android:drawableStart="@drawable/ic_person"
                     android:drawablePadding="10dp"
-                    android:paddingTop="10dp"
                     android:hint="Username"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -103,9 +104,10 @@
                     android:backgroundTint="@color/backgroundWhite90"
                     android:drawableStart="@drawable/ic_lock"
                     android:drawablePadding="10dp"
-                    android:paddingTop="11dp"
                     android:hint="Password"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

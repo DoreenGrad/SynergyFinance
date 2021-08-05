@@ -12,39 +12,34 @@
         android:id="@+id/editTextPrincipalAmount"
         style="@style/EditTextNumber"
         android:layout_marginTop="35dp"
+        android:editable="false"
         android:hint="Principal Amount"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextPrincipalAmount2"
-        style="@style/EditTextNumber"
-        android:backgroundTint="@color/textGray100"
-        android:background="@drawable/roundstyle_all_08"
-        android:textColor="@color/backgroundWhite100"
-        android:layout_width="0dp"
-        app:layout_constraintWidth_default="percent"
-        app:layout_constraintWidth_percent="0.85"
-        android:layout_height="0dp"
-        app:layout_constraintHeight_default="percent"
-        app:layout_constraintHeight_percent="0.23"
-        android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/textViewAnswer"
+        style="@style/EditTextNumber.TextViewAnswer"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <EditText
         android:id="@+id/editTextTotalRepay"
         style="@style/EditTextNumber"
         android:layout_marginTop="15dp"
         android:hint="Total Repayment Amount"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPrincipalAmount" />
 
-    <EditText
-        android:id="@+id/editTextInterestRate"
+    <TextView
+        android:id="@+id/textViewInterestRate"
         style="@style/EditTextNumber"
         android:layout_marginTop="15dp"
         android:hint="Interest Rate"
@@ -57,6 +52,7 @@
         style="@style/EditTextNumber"
         android:layout_marginTop="15dp"
         android:hint="Duration in Years"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,6 +63,7 @@
         style="@style/EditTextNumber"
         android:layout_marginTop="15dp"
         android:hint="Repayment"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,7 +82,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextInterestRate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInterestRate"
         app:layout_constraintWidth_default="percent"
         app:layout_constraintWidth_percent="0.8" />
 
