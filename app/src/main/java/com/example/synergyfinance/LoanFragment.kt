@@ -17,12 +17,6 @@ class LoanFragment : Fragment() {
     private lateinit var button: Button
     private lateinit var answer: TextView
 
-    /*private var listener: LoanFragmentListener? = null
-
-    interface LoanFragmentListener {
-        fun onInputSent(input: CharSequence)
-    }*/
-
     @Nullable
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -88,21 +82,4 @@ class LoanFragment : Fragment() {
 
         return v
     }
-
-    /*override fun onAttach(context: Context) {
-        super.onAttach(context)
-        listener = if (context is LoanFragmentListener) {
-            context
-        } else {
-            throw RuntimeException(
-                context.toString()
-                        + " must implement LoanFragmentListener"
-            )
-        }
-    }
-
-    override fun onDetach() {
-        super.onDetach()
-        listener = null
-    }*/
 }

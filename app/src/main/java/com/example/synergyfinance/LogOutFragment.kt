@@ -18,5 +18,4 @@ class LogOutFragment : Fragment() {
 
         return inflater.inflate(R.layout.fragment_logout, container, false)
     }
-
 }

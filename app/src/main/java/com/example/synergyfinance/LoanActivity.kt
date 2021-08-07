@@ -45,18 +45,27 @@ class LoanActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.nav_budget -> supportFragmentManager.beginTransaction().replace (
-                R.id.fragment_container,
-                BudgetFragment()
-            ).commit()
-            R.id.nav_loan -> supportFragmentManager.beginTransaction().replace(
-                R.id.fragment_container,
-                LoanFragment()
-            ).commit()
-            R.id.nav_logout -> supportFragmentManager.beginTransaction().replace(
-                R.id.fragment_container,
-                LogOutFragment()
-            ).commit()
+            R.id.nav_budget -> {
+                supportFragmentManager.beginTransaction().replace (
+                    R.id.fragment_container,
+                    BudgetFragment()
+                ).commit()
+                supportActionBar?.setTitle("Budget Calculator")
+            }
+            R.id.nav_loan -> {
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.fragment_container,
+                    LoanFragment()
+                ).commit()
+                supportActionBar?.setTitle("Loan Calculator")
+            }
+            else -> {
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.fragment_container,
+                    LogOutFragment()
+                ).commit()
+                supportActionBar?.setTitle("Log Out")
+            }
         }
         drawer.closeDrawer(GravityCompat.START)
         return true
