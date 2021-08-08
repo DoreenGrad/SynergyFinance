@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "906244352210",
+    "project_id": "studentsbudgetingapp",
+    "storage_bucket": "studentsbudgetingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906244352210:android:4fa59d90f89f46a48c650b",
+        "android_client_info": {
+          "package_name": "com.example.studentsbudgetingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906244352210-hctj4nsn4p93fn4ba607l6b6da0io621.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studentsbudgetingapp",
+            "certificate_hash": "19aea30c0a2907bb8db1f44532583526043312cf"
+          }
+        },
+        {
+          "client_id": "906244352210-f045kfem0et25nca4nj1uj440j3sqj9m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA77fXWKDU3UP7cEgZu9KqV8yoieZzojQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906244352210-f045kfem0et25nca4nj1uj440j3sqj9m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
