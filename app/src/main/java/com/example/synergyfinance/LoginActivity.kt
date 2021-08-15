@@ -10,13 +10,15 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        btnRegLogin.setOnClickListener{
-            startActivity(Intent(this, RegisterActivity::class.java))
-            overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left)
+        btnLogin.setOnClickListener {
+            var intent = Intent(this, LoanActivity::class.java)
+            startActivity(intent)
         }
 
-        btnRegLogin2.setOnClickListener {
-            startActivity(Intent(this, LoanActivity::class.java))
+        textViewRegister.setOnClickListener {
+            var intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left)
         }
     }
 }

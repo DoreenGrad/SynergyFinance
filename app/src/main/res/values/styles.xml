@@ -14,6 +14,8 @@
     <style name="SplashScreen">
         <item name="android:background">@color/backgroundDarkGray100</item>
         <item name="android:textColor">@color/backgroundWhite100</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="TCs">
@@ -59,6 +61,7 @@
         <item name="android:textColor">@color/backgroundWhite100</item>
         <item name="android:textSize">34dp</item>
         <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@color/backgroundWhite00</item>
         <item name="fontFamily">@font/merriweather</item>
     </style>
 

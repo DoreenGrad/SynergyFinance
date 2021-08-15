@@ -4,41 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:theme="@style/SplashScreen"
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:id="@+id/imageViewBackground01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_edited"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/textViewLogin"
+        android:id="@+id/textViewLoginShow"
         style="@style/HeadingLoginRegister"
         android:text="Login"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/roundstyle_left_16"
-        android:backgroundTint="@color/backgroundLightGray100"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_default="percent"
-        app:layout_constraintWidth_percent="0.5"
-        app:layout_constraintHeight_default="percent"
-        app:layout_constraintHeight_percent="0.75"/>
-
     <Button
-        android:id="@+id/btnRegLogin"
-        style="@style/ButtonLoginRegister"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:text="Register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnRegLogin2"
+        android:id="@+id/btnLogin"
         style="@style/ButtonLoginRegister"
         android:layout_marginTop="15dp"
         android:text="Log In"
@@ -47,14 +38,57 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
+    <TextView
+        android:id="@+id/textViewNotAMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/backgroundWhite00"
+        android:text="Not a member?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/backgroundWhite00"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:text="Register"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNotAMember" />
+
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/backgroundWhite00"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:text="Forgot Password?"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewRegister" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/backgroundWhite00"
         android:background="@drawable/roundstyle_passwordboxes"
+        android:backgroundTint="@color/backgroundWhite00"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -62,8 +96,8 @@
             android:layout_width="325dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:backgroundTint="@color/backgroundWhite00"
             android:background="@drawable/roundstyle_passwordboxes"
+            android:backgroundTint="@color/backgroundWhite00"
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
@@ -76,6 +110,7 @@
                 android:paddingEnd="6dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/backgroundWhite90"
@@ -83,6 +118,7 @@
                     android:drawablePadding="10dp"
                     android:hint="Username"
                     android:inputType="textPersonName"
+                    android:nextFocusUp="@id/username"
                     android:paddingTop="20dp"
                     android:paddingBottom="10dp" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -99,6 +135,7 @@
                 app:passwordToggleTint="@color/backgroundWhite90">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/backgroundWhite90"
